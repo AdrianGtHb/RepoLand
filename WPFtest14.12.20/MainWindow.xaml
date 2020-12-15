@@ -1,0 +1,43 @@
+﻿<Window x:Class="WPFtest14._12._20.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFtest14._12._20"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="476" Width="408.8">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lbl_Won" Grid.Column="0"/>
+            <Label x:Name="lbl_Score" Grid.Column="1" Content="Player 1: 0                      Player 2: 0"/>
+        </Grid>
+        <Grid Margin="30" Width="300">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="0*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="eins" Click="eins_Click" Grid.Row="0" Grid.Column="0" Width="100" Height="100" FontSize="70" Background="White"/>
+            <Button x:Name="zwei" Click="zwei_Click" Grid.Row="0" Grid.Column="1" Width="100" Height="100" FontSize="70" Background="White"/>
+            <Button x:Name="drei" Click="drei_Click" Grid.Row="0" Grid.Column="2" Width="100" Height="100" FontSize="70" Background="White"/>
+            <Button x:Name="vier" Click="vier_Click" Grid.Row="1" Grid.Column="0" Width="100" Height="100" FontSize="70" Background="White"/>
+            <Button x:Name="fünf" Click="fünf_Click" Grid.Row="1" Grid.Column="1" Width="100" Height="100" FontSize="70" Background="White"/>
+            <Button x:Name="sechs" Click="sechs_Click" Grid.Row="1" Grid.Column="2" Width="100" Height="100" FontSize="70" Background="White"/>
+            <Button x:Name="sieben" Click="sieben_Click" Grid.Row="2" Grid.Column="0" Width="100" Height="100" FontSize="70" Background="White"/>
+            <Button x:Name="acht" Click="acht_Click" Grid.Row="2" Grid.Column="1" Width="100" Height="100" FontSize="70" Background="White"/>
+            <Button x:Name="neun" Click="neun_Click" Grid.Row="2" Grid.Column="2" Width="100" Height="100" FontSize="70" Background="White"/>
+        </Grid>
+        <Button x:Name="newg" Height="30" Width="200" Content="New Game" Click="newg_Click" IsEnabled="False"/>
+    </StackPanel>
+</Window>
